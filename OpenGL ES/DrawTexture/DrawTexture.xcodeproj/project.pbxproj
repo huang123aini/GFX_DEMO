@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFD652EB2831F21600937086 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD652EA2831F21600937086 /* AppDelegate.m */; };
+		FFD652EE2831F21600937086 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD652ED2831F21600937086 /* SceneDelegate.m */; };
+		FFD652F12831F21600937086 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD652F02831F21600937086 /* ViewController.m */; };
+		FFD652F42831F21600937086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD652F22831F21600937086 /* Main.storyboard */; };
+		FFD652F62831F21800937086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD652F52831F21800937086 /* Assets.xcassets */; };
+		FFD652F92831F21800937086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD652F72831F21800937086 /* LaunchScreen.storyboard */; };
+		FFD652FC2831F21800937086 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD652FB2831F21800937086 /* main.m */; };
+		FFD653062831F21800937086 /* DrawTextureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD653052831F21800937086 /* DrawTextureTests.m */; };
+		FFD653102831F21800937086 /* DrawTextureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD6530F2831F21800937086 /* DrawTextureUITests.m */; };
+		FFD653122831F21800937086 /* DrawTextureUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD653112831F21800937086 /* DrawTextureUITestsLaunchTests.m */; };
+		FFD653202831F27700937086 /* OpenGLESView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FFD6531F2831F27700937086 /* OpenGLESView.mm */; };
+		FFD653222831F47E00937086 /* duck.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD653212831F47E00937086 /* duck.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFD653022831F21800937086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD652DE2831F21600937086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD652E52831F21600937086;
+			remoteInfo = DrawTexture;
+		};
+		FFD6530C2831F21800937086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD652DE2831F21600937086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD652E52831F21600937086;
+			remoteInfo = DrawTexture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFD652E62831F21600937086 /* DrawTexture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawTexture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD652E92831F21600937086 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFD652EA2831F21600937086 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFD652EC2831F21600937086 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FFD652ED2831F21600937086 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FFD652EF2831F21600937086 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFD652F02831F21600937086 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFD652F32831F21600937086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFD652F52831F21800937086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFD652F82831F21800937086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFD652FA2831F21800937086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD652FB2831F21800937086 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFD653012831F21800937086 /* DrawTextureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawTextureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD653052831F21800937086 /* DrawTextureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTextureTests.m; sourceTree = "<group>"; };
+		FFD6530B2831F21800937086 /* DrawTextureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawTextureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD6530F2831F21800937086 /* DrawTextureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTextureUITests.m; sourceTree = "<group>"; };
+		FFD653112831F21800937086 /* DrawTextureUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTextureUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FFD6531E2831F27700937086 /* OpenGLESView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLESView.h; sourceTree = "<group>"; };
+		FFD6531F2831F27700937086 /* OpenGLESView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLESView.mm; sourceTree = "<group>"; };
+		FFD653212831F47E00937086 /* duck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duck.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD652E32831F21600937086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD652FE2831F21800937086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD653082831F21800937086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFD652DD2831F21600937086 = {
+			isa = PBXGroup;
+			children = (
+				FFD652E82831F21600937086 /* DrawTexture */,
+				FFD653042831F21800937086 /* DrawTextureTests */,
+				FFD6530E2831F21800937086 /* DrawTextureUITests */,
+				FFD652E72831F21600937086 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD652E72831F21600937086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD652E62831F21600937086 /* DrawTexture.app */,
+				FFD653012831F21800937086 /* DrawTextureTests.xctest */,
+				FFD6530B2831F21800937086 /* DrawTextureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD652E82831F21600937086 /* DrawTexture */ = {
+			isa = PBXGroup;
+			children = (
+				FFD653212831F47E00937086 /* duck.png */,
+				FFD6531E2831F27700937086 /* OpenGLESView.h */,
+				FFD6531F2831F27700937086 /* OpenGLESView.mm */,
+				FFD652E92831F21600937086 /* AppDelegate.h */,
+				FFD652EA2831F21600937086 /* AppDelegate.m */,
+				FFD652EC2831F21600937086 /* SceneDelegate.h */,
+				FFD652ED2831F21600937086 /* SceneDelegate.m */,
+				FFD652EF2831F21600937086 /* ViewController.h */,
+				FFD652F02831F21600937086 /* ViewController.m */,
+				FFD652F22831F21600937086 /* Main.storyboard */,
+				FFD652F52831F21800937086 /* Assets.xcassets */,
+				FFD652F72831F21800937086 /* LaunchScreen.storyboard */,
+				FFD652FA2831F21800937086 /* Info.plist */,
+				FFD652FB2831F21800937086 /* main.m */,
+			);
+			path = DrawTexture;
+			sourceTree = "<group>";
+		};
+		FFD653042831F21800937086 /* DrawTextureTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD653052831F21800937086 /* DrawTextureTests.m */,
+			);
+			path = DrawTextureTests;
+			sourceTree = "<group>";
+		};
+		FFD6530E2831F21800937086 /* DrawTextureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD6530F2831F21800937086 /* DrawTextureUITests.m */,
+				FFD653112831F21800937086 /* DrawTextureUITestsLaunchTests.m */,
+			);
+			path = DrawTextureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFD652E52831F21600937086 /* DrawTexture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD653152831F21800937086 /* Build configuration list for PBXNativeTarget "DrawTexture" */;
+			buildPhases = (
+				FFD652E22831F21600937086 /* Sources */,
+				FFD652E32831F21600937086 /* Frameworks */,
+				FFD652E42831F21600937086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawTexture;
+			productName = DrawTexture;
+			productReference = FFD652E62831F21600937086 /* DrawTexture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFD653002831F21800937086 /* DrawTextureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD653182831F21800937086 /* Build configuration list for PBXNativeTarget "DrawTextureTests" */;
+			buildPhases = (
+				FFD652FD2831F21800937086 /* Sources */,
+				FFD652FE2831F21800937086 /* Frameworks */,
+				FFD652FF2831F21800937086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD653032831F21800937086 /* PBXTargetDependency */,
+			);
+			name = DrawTextureTests;
+			productName = DrawTextureTests;
+			productReference = FFD653012831F21800937086 /* DrawTextureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFD6530A2831F21800937086 /* DrawTextureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD6531B2831F21800937086 /* Build configuration list for PBXNativeTarget "DrawTextureUITests" */;
+			buildPhases = (
+				FFD653072831F21800937086 /* Sources */,
+				FFD653082831F21800937086 /* Frameworks */,
+				FFD653092831F21800937086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD6530D2831F21800937086 /* PBXTargetDependency */,
+			);
+			name = DrawTextureUITests;
+			productName = DrawTextureUITests;
+			productReference = FFD6530B2831F21800937086 /* DrawTextureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD652DE2831F21600937086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FFD652E52831F21600937086 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FFD653002831F21800937086 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FFD652E52831F21600937086;
+					};
+					FFD6530A2831F21800937086 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FFD652E52831F21600937086;
+					};
+				};
+			};
+			buildConfigurationList = FFD652E12831F21600937086 /* Build configuration list for PBXProject "DrawTexture" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFD652DD2831F21600937086;
+			productRefGroup = FFD652E72831F21600937086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD652E52831F21600937086 /* DrawTexture */,
+				FFD653002831F21800937086 /* DrawTextureTests */,
+				FFD6530A2831F21800937086 /* DrawTextureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFD652E42831F21600937086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD652F92831F21800937086 /* LaunchScreen.storyboard in Resources */,
+				FFD652F62831F21800937086 /* Assets.xcassets in Resources */,
+				FFD653222831F47E00937086 /* duck.png in Resources */,
+				FFD652F42831F21600937086 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD652FF2831F21800937086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD653092831F21800937086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD652E22831F21600937086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD652F12831F21600937086 /* ViewController.m in Sources */,
+				FFD653202831F27700937086 /* OpenGLESView.mm in Sources */,
+				FFD652EB2831F21600937086 /* AppDelegate.m in Sources */,
+				FFD652FC2831F21800937086 /* main.m in Sources */,
+				FFD652EE2831F21600937086 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD652FD2831F21800937086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD653062831F21800937086 /* DrawTextureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD653072831F21800937086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD653122831F21800937086 /* DrawTextureUITestsLaunchTests.m in Sources */,
+				FFD653102831F21800937086 /* DrawTextureUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFD653032831F21800937086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD652E52831F21600937086 /* DrawTexture */;
+			targetProxy = FFD653022831F21800937086 /* PBXContainerItemProxy */;
+		};
+		FFD6530D2831F21800937086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD652E52831F21600937086 /* DrawTexture */;
+			targetProxy = FFD6530C2831F21800937086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFD652F22831F21600937086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD652F32831F21600937086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFD652F72831F21800937086 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD652F82831F21800937086 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFD653132831F21800937086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFD653142831F21800937086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFD653162831F21800937086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrawTexture/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.DrawTexture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFD653172831F21800937086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrawTexture/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.DrawTexture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFD653192831F21800937086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.DrawTextureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawTexture.app/DrawTexture";
+			};
+			name = Debug;
+		};
+		FFD6531A2831F21800937086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.DrawTextureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawTexture.app/DrawTexture";
+			};
+			name = Release;
+		};
+		FFD6531C2831F21800937086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.DrawTextureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawTexture;
+			};
+			name = Debug;
+		};
+		FFD6531D2831F21800937086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.DrawTextureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawTexture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD652E12831F21600937086 /* Build configuration list for PBXProject "DrawTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD653132831F21800937086 /* Debug */,
+				FFD653142831F21800937086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD653152831F21800937086 /* Build configuration list for PBXNativeTarget "DrawTexture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD653162831F21800937086 /* Debug */,
+				FFD653172831F21800937086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD653182831F21800937086 /* Build configuration list for PBXNativeTarget "DrawTextureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD653192831F21800937086 /* Debug */,
+				FFD6531A2831F21800937086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD6531B2831F21800937086 /* Build configuration list for PBXNativeTarget "DrawTextureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD6531C2831F21800937086 /* Debug */,
+				FFD6531D2831F21800937086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFD652DE2831F21600937086 /* Project object */;
+}
